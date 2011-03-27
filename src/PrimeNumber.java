@@ -11,6 +11,9 @@ public class PrimeNumber {
 		if(n == 3){
 			toReturn.add(3);
 		}
+		if (toReturn.isEmpty() && n > 1){
+			toReturn.add(n);
+		}
 		return toReturn;
 	}
 }
