@@ -14,4 +14,8 @@ public class PrimeNumber {
 		}
 		return toReturn;
 	}
+	
+	public static ArrayList<Integer> getPrimes(int n){
+		return new ArrayList<Integer>();
+	}
 }
