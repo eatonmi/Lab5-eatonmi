@@ -8,8 +8,9 @@ public class PrimeNumber {
 			toReturn.add(2);
 			n /= 2;
 		}
-		if(n == 3){
+		while (n % 3 == 0){
 			toReturn.add(3);
+			n /= 3;
 		}
 		if (toReturn.isEmpty() && n > 1){
 			toReturn.add(n);
