@@ -9,12 +9,22 @@ public class PrimeNumberTest {
 	public void testImports() {
 		assertTrue("JUnit doesn't like you", true);
 	}
-	
+
+	@Test
 	public void testOne() {
-		assertEquals(new ArrayList<Integer>(), PrimeNumber.getPrimes(1));		
+		assertEquals(list(), PrimeNumber.getPrimes(1));
 	}
-	
-	public void testTwo(){
-		assertEquals(new ArrayList<Integer>(new Integer(2)), PrimeNumber.getPrimes(2));
+
+	@Test
+	public void testTwo() {
+		assertEquals(list(2), PrimeNumber.getPrimes(2));
+	}
+
+	public ArrayList<Integer> list(int... ints) {
+		ArrayList<Integer> toReturn = new ArrayList<Integer>();
+		for (int i : ints) {
+			toReturn.add(i);
+		}
+		return toReturn;
 	}
 }
