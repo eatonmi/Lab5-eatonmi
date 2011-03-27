@@ -49,6 +49,11 @@ public class PrimeNumberTest {
 	public void testBig() {
 		assertEquals(list(5, 7, 7, 1327), PrimeNumber.getPrimes(325115));
 	}
+	
+	@Test
+	public void testNine(){
+		assertEquals(list(3,3), PrimeNumber.getPrimes(9));
+	}
 
 	public ArrayList<Integer> list(int... ints) {
 		ArrayList<Integer> toReturn = new ArrayList<Integer>();
