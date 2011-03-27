@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class PrimeNumber {
 
-	public static ArrayList<Integer> getPrimes(int n) {
+	public static ArrayList<Integer> getFactors(int n) {
 		ArrayList<Integer> toReturn = new ArrayList<Integer>();
 		int candidate = 2;
 		while(n != 1){
