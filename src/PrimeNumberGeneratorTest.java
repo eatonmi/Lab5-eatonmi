@@ -35,7 +35,7 @@ public class PrimeNumberGeneratorTest {
 	
 	@Test
 	public void testTwelve(){
-		assertEquals(PrimeNumberTest.list(2, 3, 5, 7, 11), PrimeNumber.getPrimes(11));
+		assertEquals(PrimeNumberTest.list(2, 3, 5, 7, 11), PrimeNumber.getPrimes(12));
 	}
 	
 }
