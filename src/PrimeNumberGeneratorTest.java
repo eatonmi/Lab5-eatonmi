@@ -4,27 +4,32 @@ import org.junit.Test;
 
 public class PrimeNumberGeneratorTest {
 	@Test
-	public void testTwo(){
+	public void testTwo() {
 		assertEquals(PrimeNumberTest.list(), PrimeNumber.getPrimes(2));
 	}
-	
+
 	@Test
-	public void testThree(){
+	public void testThree() {
 		assertEquals(PrimeNumberTest.list(2), PrimeNumber.getPrimes(3));
 	}
-	
+
 	@Test
-	public void testFour(){
-		assertEquals(PrimeNumberTest.list(2,3), PrimeNumber.getPrimes(4));
+	public void testFour() {
+		assertEquals(PrimeNumberTest.list(2, 3), PrimeNumber.getPrimes(4));
 	}
-	
+
 	@Test
-	public void testSix(){
-		assertEquals(PrimeNumberTest.list(2,3,5), PrimeNumber.getPrimes(6));
+	public void testSix() {
+		assertEquals(PrimeNumberTest.list(2, 3, 5), PrimeNumber.getPrimes(6));
 	}
-	
+
 	@Test
-	public void testSeven(){
+	public void testSeven() {
 		assertEquals(PrimeNumberTest.list(2, 3, 5), PrimeNumber.getPrimes(7));
+	}
+
+	@Test
+	public void testEight() {
+		assertEquals(PrimeNumberTest.list(2, 3, 5, 7), PrimeNumber.getPrimes(8));
 	}
 }

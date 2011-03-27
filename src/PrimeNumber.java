@@ -23,16 +23,10 @@ public class PrimeNumber {
 		for (int i = 2; i < n; i++) {
 			candidates.add(i);
 		}
-		candidates.remove(new Integer(4));
-//		int counter = 1;
-//		for (int i : candidates){
-//			if(counter == 2){
-//				candidates.remove(candidates.get(Integer(i)));
-//				counter = 1;
-//			}
-//			counter++;
-//			
-//		}
+		int p = 2;
+		for (int i = 2; i * p < n; i++) {
+			candidates.remove(new Integer(i * p));
+		}
 		return candidates;
 	}
 }
