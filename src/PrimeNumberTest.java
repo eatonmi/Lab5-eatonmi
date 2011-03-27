@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 public class PrimeNumberTest {
@@ -10,5 +12,9 @@ public class PrimeNumberTest {
 	
 	public void testOne() {
 		assertEquals(new ArrayList<Integer>(), PrimeNumber.getPrimes(1));		
+	}
+	
+	public void testTwo(){
+		assertEquals(new ArrayList<Integer>(new Integer(2)), PrimeNumber.getPrimes(2));
 	}
 }
