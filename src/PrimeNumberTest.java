@@ -9,6 +9,6 @@ public class PrimeNumberTest {
 	}
 	
 	public void testOne() {
-		assertEquals(new ArrayList<Integer>(), PrimeNumber.GetPrimes(1));		
+		assertEquals(new ArrayList<Integer>(), PrimeNumber.getPrimes(1));		
 	}
 }
