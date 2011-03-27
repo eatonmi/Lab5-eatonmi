@@ -4,16 +4,13 @@ public class PrimeNumber {
 
 	public static ArrayList<Integer> getPrimes(int n) {
 		ArrayList<Integer> toReturn = new ArrayList<Integer>();
-		while (n % 2 == 0) {
-			toReturn.add(2);
-			n /= 2;
-		}
-		while (n % 3 == 0){
-			toReturn.add(3);
-			n /= 3;
-		}
-		if (toReturn.isEmpty() && n > 1){
-			toReturn.add(n);
+		int candidate = 2;
+		while(n != 1){
+			while(n % candidate == 0){
+				toReturn.add(candidate);
+				n /= candidate;
+			}
+			candidate++;
 		}
 		return toReturn;
 	}
