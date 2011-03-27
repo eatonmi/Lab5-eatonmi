@@ -32,4 +32,10 @@ public class PrimeNumberGeneratorTest {
 	public void testEight() {
 		assertEquals(PrimeNumberTest.list(2, 3, 5, 7), PrimeNumber.getPrimes(8));
 	}
+	
+	@Test
+	public void testTwelve(){
+		assertEquals(PrimeNumberTest.list(2, 3, 5, 7, 11), PrimeNumber.getPrimes(11));
+	}
+	
 }
