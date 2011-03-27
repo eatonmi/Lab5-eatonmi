@@ -22,4 +22,9 @@ public class PrimeNumberGeneratorTest {
 	public void testSix(){
 		assertEquals(PrimeNumberTest.list(2,3,5), PrimeNumber.getPrimes(6));
 	}
+	
+	@Test
+	public void testSeven(){
+		assertEquals(PrimeNumberTest.list(2, 3, 5), PrimeNumber.getPrimes(7));
+	}
 }
