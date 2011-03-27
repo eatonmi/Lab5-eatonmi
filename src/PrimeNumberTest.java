@@ -29,20 +29,25 @@ public class PrimeNumberTest {
 	public void testFour() {
 		assertEquals(list(2, 2), PrimeNumber.getPrimes(4));
 	}
-	
+
 	@Test
 	public void testSix() {
-		assertEquals(list(2,3), PrimeNumber.getPrimes(6));
+		assertEquals(list(2, 3), PrimeNumber.getPrimes(6));
 	}
-	
+
 	@Test
-	public void testSeven(){
+	public void testSeven() {
 		assertEquals(list(7), PrimeNumber.getPrimes(7));
 	}
-	
+
 	@Test
-	public void testEight(){
-		assertEquals(list(2,2,2), PrimeNumber.getPrimes(8));		
+	public void testEight() {
+		assertEquals(list(2, 2, 2), PrimeNumber.getPrimes(8));
+	}
+
+	@Test
+	public void testBig() {
+		assertEquals(list(5, 7, 7, 1327), PrimeNumber.getPrimes(325115));
 	}
 
 	public ArrayList<Integer> list(int... ints) {
