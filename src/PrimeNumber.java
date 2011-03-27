@@ -23,13 +23,13 @@ public class PrimeNumber {
 		for (int i = 2; i < n; i++) {
 			candidates.add(i);
 		}
-		int p = 2;
-		for (int i = 2; i * p < n; i++) {
-			candidates.remove(new Integer(i * p));
-		}
-		p = 3;
-		for (int i = 2; i * p < n; i++) {
-			candidates.remove(new Integer(i * p));
+		int j = 0;
+		while (j < candidates.size()) {
+			int p = candidates.get(j);
+			for (int i = 2; i * p < n; i++) {
+				candidates.remove(new Integer(i * p));
+			}
+			j++;
 		}
 		return candidates;
 	}
