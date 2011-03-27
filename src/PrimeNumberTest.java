@@ -34,6 +34,10 @@ public class PrimeNumberTest {
 	public void testSix() {
 		assertEquals(list(2,3), PrimeNumber.getPrimes(6));
 	}
+	
+	public void testSeven(){
+		assertEquals(list(7), PrimeNumber.getPrimes(7));
+	}
 
 	public ArrayList<Integer> list(int... ints) {
 		ArrayList<Integer> toReturn = new ArrayList<Integer>();
