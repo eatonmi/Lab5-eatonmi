@@ -7,4 +7,8 @@ public class PrimeNumberTest {
 	public void testImports() {
 		assertTrue("JUnit doesn't like you", true);
 	}
+	
+	public void testOne() {
+		assertEquals(new ArrayList<Integer>(), PrimeNumber.GetPrimes(1));		
+	}
 }
