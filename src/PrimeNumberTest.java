@@ -19,15 +19,20 @@ public class PrimeNumberTest {
 	public void testTwo() {
 		assertEquals(list(2), PrimeNumber.getPrimes(2));
 	}
-	
+
 	@Test
 	public void testThree() {
 		assertEquals(list(3), PrimeNumber.getPrimes(3));
 	}
+
+	@Test
+	public void testFour() {
+		assertEquals(list(2, 2), PrimeNumber.getPrimes(4));
+	}
 	
 	@Test
-	public void testFour(){
-		assertEquals(list(4), PrimeNumber.getPrimes(4));
+	public void testSix() {
+		assertEquals(list(2,3), PrimeNumber.getPrimes(6));
 	}
 
 	public ArrayList<Integer> list(int... ints) {
