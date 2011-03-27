@@ -27,6 +27,10 @@ public class PrimeNumber {
 		for (int i = 2; i * p < n; i++) {
 			candidates.remove(new Integer(i * p));
 		}
+		p = 3;
+		for (int i = 2; i * p < n; i++) {
+			candidates.remove(new Integer(i * p));
+		}
 		return candidates;
 	}
 }
