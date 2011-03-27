@@ -20,7 +20,7 @@ public class PrimeNumber {
 			return new ArrayList<Integer>();
 		}
 		ArrayList<Integer> candidates = new ArrayList<Integer>();
-		for (int i = 2; i <= n; i++) {
+		for (int i = 2; i < n; i++) {
 			candidates.add(i);
 		}
 		return candidates;
